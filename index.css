@@ -1,0 +1,106 @@
+.theme {
+  color: #FFFFFF;
+  font-family: Arial; 
+  background-color: #333333;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.topnav {
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.topnav a {
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.topnav a:hover {
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #3EB489;
+  transition: background-color 0.3s ease;
+}
+
+.topnav a.active {
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: #3EB489;
+}
+
+.icon-list {
+  padding: 0;
+  list-style: none; 
+}
+
+.icon-list item {
+  margin-bottom: 0.5em;
+  position: relative; 
+  padding-left: 2em; 
+  align-items: flex-start; 
+  display: flex;
+}
+
+.icon-list item i {
+  position: absolute; 
+  left: 0; 
+  top: 0.2em;
+}
+
+.icon-list-entry {
+  display: flex; 
+  flex-direction: column;
+}
+
+.icon-list-title {
+  color: #FFFFFF;
+  font-size: 1em; 
+}
+
+.icon-list-subtitle {
+  color: #D3D3D3;
+  font-size: 0.95em; 
+}
+
+.pub-title {
+  color: #FFFFFF;
+  font-size: 1em;
+  font-weight: bold;
+
+}
+
+.pub-subtitle {
+  color: #D3D3D3;
+  font-size: 0.9em;
+  font-style: italic;
+
+}
+
+.pub-button {
+  color: #3EB489;
+  padding: 6px 14px; 
+  margin-top: 5px;
+  text-decoration: none;
+  border: solid; 
+  border-color: #3EB489;
+  border-radius: 6px; 
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.pub-button:hover {
+  color: #FFFFFF;
+  background-color: #3EB489;
+}
+
+
+
