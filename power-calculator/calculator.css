@@ -36,16 +36,17 @@
   font-weight: 500;
   min-width: 30px;
   padding: 0px 4px; 
+  text-align: left;
 }
 
 .field input {
   padding: 4px 4px;
-  width: 50px;
+  width: 70px;
 }
 
 .field select {
   padding: 4px 4px;
-  width: 50px;
+  width: 82px;
 }
 
 .navbutton {
