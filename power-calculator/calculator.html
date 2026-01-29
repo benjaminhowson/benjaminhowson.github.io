@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+
+<link rel = "stylesheet" href = "../index.css">
+  <link rel = "stylesheet" href = "calculator.css">
+  <title> Benjamin Howson </title>
+</head>
+
+
+<body class = "theme">
+
+<!-- Static Navigation Bar -->
+<nav class = "topnav">
+  <a href = "../index.html"> Home </a>
+  <a href = "../publications.html"> Publications </a>
+  <a href = "../projects.html"> Projects </a>
+</nav>
+
+<!-- Description of the Calculator -->
+<div style = "display: flex; flex-direction: column; align-items: left; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
+  <span style = "font-size: 22px; font-weight: bold; text-align: center; padding-bottom: 10px;"> 
+    Power Calculator for the Z-Test
+  </span>
+</div>
+    
+<p style = "font-weight: bold; text-align: center;"> Test Settings </p>
+
+<div class = "container">
+  <div class = "field">
+    <label> Detect: </label>
+    <select id = "hypothesis">
+      <option value = "!="> ↑ ↓ </option>
+      <option value = ">"> ↑ </option>
+      <option value = "<"> ↓ </option>
+    </select>
+  </div>
+
+  <div class = "field">
+    <label> False Positive (%): </label>
+    <input type = "number" id = "alpha" value = 5>
+  </div>
+
+  <div class = "field">
+    <label> Effect Size (δ): </label>
+    <input type = "number" id = "delta" value = 1>
+  </div>
+</div>
+
+<div class = "row">
+  <div class = "container">
+    <div style = "flex: 1;">
+      <p style = "font-weight: bold; text-align: center;"> Treatment 1 </p>
+      <div class = "field">
+        <label> Samples: </label>
+        <input type = "number" id = "ncontrol">
+      </div>
+      
+      <div class = "field">
+        <label> Variance: </label>
+        <input type = "number" id = "vcontrol" value = 1>
+      </div>
+    </div>
+
+    <div style = "flex: 1;">
+      <p style = "font-weight: bold; text-align: center;"> Treatment 2 </p>
+      <div class = "field">
+        <label> Samples: </label>
+        <input type = "number" id = "nvariant">
+      </div>
+
+      <div class = "field">
+        <label> Variance: </label>
+        <input type = "number" id = "vvariant" value = 1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class = "container">
+  <button class = "navbutton" id = "calculate"> Calculate </button>
+</div>
+
+<div class = "container"> 
+  <p id = "output-threshold"> Rejection Threshold: </p>
+  <p id = "output-power"> Statistical Power: </p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script>
+<script src = "main.js"></script>
+
+</body>
+</html>

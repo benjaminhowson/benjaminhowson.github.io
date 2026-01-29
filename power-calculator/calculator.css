@@ -1,0 +1,73 @@
+.theme {
+  color: #FFFFFF;
+  font-family: Arial; 
+  background-color: #333333;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 600px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.container {
+  gap: 20px; 
+  display: flex; 
+  align-items: left; 
+  justify-content: center; 
+  padding-bottom: 20px;
+}
+
+.row {
+  gap: 20px; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;        
+  margin: 6px 0;
+}
+
+.field label {
+  font-weight: 500;
+  min-width: 30px;
+  padding: 0px 4px; 
+}
+
+.field input {
+  padding: 4px 4px;
+  width: 50px;
+}
+
+.field select {
+  padding: 4px 4px;
+  width: 50px;
+}
+
+.navbutton {
+  width: 25%; 
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid #3EB489;         
+  border-radius: 10px; 
+  text-decoration: none;
+  align-items: center;
+}
+
+.navbutton:hover {
+  cursor: pointer;
+  background-color: #3EB489;
+  transition: background-color 0.3s ease;
+}
+
+.navbutton.active {
+  background-color: #3EB489;
+}
+
+
