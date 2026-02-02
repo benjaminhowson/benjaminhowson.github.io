@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<!-- Header and Imports -->
+<meta charset="UTF-8">
+<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+
+<link rel = "stylesheet" href = "index.css">
+<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<title> Benjamin Howson </title>
+<script src = "index.js"></script>
+</head>
+
+<body class = "theme">
+
+<!-- Static Navigation Bar -->
+<div class = "header-container">
+<nav class = "nav-bar">
+  <button id = "home" class = "button" onclick = "loadContent(this.id);"> Home </button>
+  <button id = "publications" class = "button" onclick = "loadContent(this.id);"> Publications </button>
+  <button id = "projects" class = "button" onclick = "loadContent(this.id);"> Projects </button>
+</nav>
+
+<!-- Static Profile Picture -->
+<div style = "gap: 10px; display: flex; padding-top: 20px; justify-content: center;">
+  <img src = "assets/profile-pic.jpg" style = "width: 150px; border-radius: 50%;">
+</div>
+
+<!-- Static Description -->
+<div style = "display: flex; flex-direction: column; align-items: center; justify-content: center; padding-top: 20px;">
+  <span style = "font-size: 22px"> Benjamin Howson </span>
+  <span style = "color: #D3D3D3; font-size: 16px;"> Data Scientist at Expedia </span>
+  <span style = "color: #D3D3D3; font-size: 16px;"> Experimentation </span>
+</div>
+</div>
+
+<!-- Insert Content for Active Button -->
+<div id = "content-area" class = "content-container">
+  <p> Click Home, Publications and Projects for more information </p>
+</div>
+
+
+
+</body>
+</html>
+
+
