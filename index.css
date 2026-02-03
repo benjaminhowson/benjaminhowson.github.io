@@ -13,10 +13,10 @@
 }
 
 .content-container {
-  width: 75%;
-  display: flex;
+  width: 50%;
+  display: inline-block;
   align-items: left;
-  padding-left: 50px;
+  padding-top: 10px; 
   padding-bottom: 20px;
   flex-direction: column;
 }
